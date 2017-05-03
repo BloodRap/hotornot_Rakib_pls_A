@@ -1,0 +1,229 @@
+// V A R I A B L E S
+$backgorund-color: #f3f3ea
+$text-color: #404040
+$link-color-light: #E74C3C
+$link-color-medium: #BD3E31
+// V A R I A B L E S
+
+
+// S A S S   R E S E T
+html
+    box-sizing: border-box
+
+*, *:before, *:after
+    box-sizing: innerhit
+    outline: none
+
+h1, h2, h3, h4, h5, h6, p
+            margin: 0
+            padding: 0
+// S A S S   R E S E T
+
+
+body
+    background-color: $backgorund-color
+
+h3
+    margin: 15px 0 0px 0
+    text-align: center
+    color: $text-color
+
+// lite enkel style på navigation
+main
+    nav
+        display: flex
+        justify-content: center
+        ul
+            list-style: none
+            li
+                display: inline
+
+
+
+// W E L C O M E   L O G O
+@media all and (min-width: 1091px)
+    header
+        width: 1091px
+        margin: 20px auto 0 auto
+
+@media all and (min-width: 640px)
+    #welcomeBig
+        max-width: 100%
+        height: auto
+
+    #welcomeSmall
+        display: none
+
+    #hotSmall
+        display: none
+
+@media all and (max-width: 639px)
+    #welcomeBig
+        display: none
+
+    header
+        width: 450px
+        margin: 0 auto
+
+    #welcomeSmall
+        width: 450px
+
+    #hotSmall
+        width: 250px
+        margin-left: 25%
+// W E L C O M E   L O G O
+
+
+
+// N A V I G A T I O N
+.link
+    position: absolute
+    text-decoration: none
+    text-align: center
+    padding: 10px 0
+    font-size: 30px
+    color: white
+    border-radius: 10px
+    background-color: $link-color-light
+    border-bottom: 5px solid $link-color-medium
+    text-shadow: 0px -2px $link-color-medium
+    transition: all 0.1s
+    -webkit-transition: all 0.1s
+
+.link:active
+    transform: translateY(5px)
+    -webkit-transform: translateY(5px)
+    border-bottom: 1px solid
+
+#link1
+    left: 19%
+    width: 15%
+    @media all and (max-width: 639px)
+        left: 1%
+        width: 28%
+
+#link2
+    left: 37%
+    width: 26%
+    @media all and (max-width: 639px)
+        left: 30%
+        width: 40%
+
+#link3
+    left: 66%
+    width: 15%
+    @media all and (max-width: 639px)
+        left: 71%
+        width: 28%
+
+#theme1
+    margin-top: 50px
+    left: 17.5%
+    width: 10%
+    @media all and (max-width: 1200px)
+        left: 2%
+        width: 15%
+    @media all and (max-width: 800px)
+        left: 19%
+        width: 20%
+    @media all and (max-width: 639px)
+        left: 4%
+        width: 30%
+
+#theme2
+    margin-top: 50px
+    left: 28.5%
+    width: 10%
+    @media all and (max-width: 1200px)
+        left: 18%
+        width: 15%
+    @media all and (max-width: 800px)
+        left: 40%
+        width: 20%
+    @media all and (max-width: 639px)
+        left: 35%
+        width: 30%
+
+#theme3
+    margin-top: 50px
+    left: 39.5%
+    width: 10%
+    @media all and (max-width: 1200px)
+        left: 34%
+        width: 15%
+    @media all and (max-width: 800px)
+        left: 61%
+        width: 20%
+    @media all and (max-width: 639px)
+        left: 66%
+        width: 30%
+
+#theme4
+    margin-top: 50px
+    left: 50.5%
+    width: 10%
+    @media all and (max-width: 1200px)
+        left: 51%
+        width: 15%
+    @media all and (max-width: 800px)
+        left: 19%
+        width: 20%
+        margin-top: 115px
+    @media all and (max-width: 639px)
+        left: 4%
+        width: 30%
+
+#theme5
+    margin-top: 50px
+    left: 61.5%
+    width: 10%
+    @media all and (max-width: 1200px)
+        left: 67%
+        width: 15%
+    @media all and (max-width: 800px)
+        left: 40%
+        width: 20%
+        margin-top: 115px
+    @media all and (max-width: 639px)
+        left: 35%
+        width: 30%
+
+#theme6
+    margin-top: 50px
+    left: 72.5%
+    width: 10%
+    @media all and (max-width: 1200px)
+        left: 83%
+        width: 15%
+    @media all and (max-width: 800px)
+        left: 61%
+        width: 20%
+        margin-top: 115px
+    @media all and (max-width: 639px)
+        left: 66%
+        width: 30%
+// N A V I G A T I O N
+
+
+
+// F O O T E R
+footer
+    position: fixed
+    bottom: 0
+    left: 0
+    width: 100%
+    height: 45px
+    text-align: center
+    background-color: #ea2803
+    span
+        display: block
+        margin-top: 13px
+    button
+        position: absolute
+        right: 0.8%
+        bottom: 26%
+    form
+        position: absolute
+        right: 0.8%
+        bottom: 26%
+// F O O T E R

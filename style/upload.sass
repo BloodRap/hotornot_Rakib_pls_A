@@ -1,0 +1,69 @@
+@import 'variables.sass'
+
+////////////////////////
+
+// stylen på form och allt som finns innuti
+
+#formUpload
+    color: $text-color
+    width: 250px
+    margin: 100px auto 0 auto
+    #hide
+        display: none
+
+    label:nth-child(even)
+        display: inline-block
+        width: 125px
+        font-size: 18px
+        text-align: center
+
+    select
+        width: 120px
+        cursor: pointer
+
+    label:nth-child(odd)
+        display: inline-block
+        width: 100%
+        font-size: 18px
+        text-align: center
+        margin-top: 5px
+        margin-bottom: 5px
+
+    input
+        width: 100%
+        font-size: 15px
+        padding: 2px 0
+        border-radius: 7px
+        margin-bottom: 5px
+        text-align: center
+
+    button
+        position: absolute
+        width: 123px
+        height: 30px
+        border-radius: 7px
+        border: none
+        color: #fff
+        font-size: 17px
+        cursor: pointer
+        transition: all 0.1s
+        &:active
+            border: none
+            transform: translateY(3px)
+
+    button:nth-child(odd)
+        background-color: #e8a44a
+        border-bottom: 3px solid #c17f26
+        &:hover
+            background-color: #f8af4c
+
+    button:nth-child(even)
+        margin-left: 128px
+        background-color: $link-color-light
+        border-bottom: 3px solid $link-color-medium
+        &:hover
+            background-color: #f65140
+    p
+        margin-top: 35px
+        font-size: 17px
+        text-align: center
